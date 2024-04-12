@@ -31,9 +31,6 @@ def whois(dominio):
 
 def menu():
     p = int(input('Selecione uma opcao do menu: '))
-    print('1 - Portscan para identificar portas abertas na aplicacao web: ')
-    print('2 - Enumerador de DNS (identificador de subdominios): ')
-    print('3 - whois (descobrir informações rápidas sobre a url): ')
     if p == 1:
         dominio = input("Digite o domínio para realizar o portscan: ")
         portscan(dominio)
@@ -50,5 +47,8 @@ def menu():
 
 print('Ola! Seja bem-vindo(a) a ferramenta all-in-one. ')
 print('Codada por: @Coffee')
+print('1 - Portscan para identificar portas abertas na aplicacao web: ')
+print('2 - Enumerador de DNS (identificador de subdominios): ')
+print('3 - whois (descobrir informações rápidas sobre a url): ')
 
 menu()
