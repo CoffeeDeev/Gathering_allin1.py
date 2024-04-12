@@ -15,8 +15,8 @@ def portscan(dominio):
         cliente.close()
     rf = int(input('Gostaria de voltar ao menu? (0 para sim, 1 para não.)'))
 
-def enumerador_de_DNS(subdominio, dominio):
-    endereco = f"{subdominio}.{dominio}"
+def enumerador_de_DNS(dominio, subdominio):
+    endereco = f"{dominio}.{subdominio}"
     try:
         socket.gethostbyname(endereco)
         print(f"O subdomínio {endereco} existe.")
