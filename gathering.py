@@ -27,7 +27,7 @@ def whois(dominio):
     info = whois(dominio)
     print("Informações de registro para o domínio", dominio)
     print("===============================================")
-    print(info)
+    print("f{dominio})
 
 def menu():
     p = int(input('Selecione uma opcao do menu: '))
