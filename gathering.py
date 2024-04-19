@@ -24,7 +24,7 @@ def enumerador_de_DNS(dominio, subdominio):
         print(f"O subdomínio {endereco} não existe.")
 
 def whois(dominio):
-    info = whois.whois(dominio)
+    info = whois(dominio)
     print("Informações de registro para o domínio", dominio)
     print("===============================================")
     print(info)
