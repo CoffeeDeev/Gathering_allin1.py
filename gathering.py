@@ -19,9 +19,9 @@ def enumerador_de_DNS(dominio, subdominio):
     endereco = f"{dominio}.{subdominio}"
     try:
         socket.gethostbyname(endereco)
-        print(f"O subdomínio {subdominio, endereco} existe.")
+        print(f"O subdomínio {endereco + subdominio} existe.")
     except socket.gaierror:
-        print(f"O subdomínio {subdominio, endereco} não existe.")
+        print(f"O subdomínio {endereco + subdominio} não existe.")
 
 def whois(dominio):
     info = whois(dominio)
